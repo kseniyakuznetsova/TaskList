@@ -21,4 +21,111 @@ input,
 select,
 textarea {
     max-width: 280px;
+    border:0;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.parent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color:#fafafa;
+}
+
+.block {
+      margin: 0 40% 0 40%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+p.header{
+    color:dimgrey;
+    font-size:30px;
+    padding-bottom:5px;
+}
+table{
+    background-color:white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 30px black;
+    opacity: 0.9;
+
+}
+td{
+    padding-left:10px;
+    padding-right:10px;
+    font-size:18px;
+
+}
+tr.bottom-border{
+    border-bottom: 1px solid deepskyblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic; 
+    width:550px;
+}
+td.right-border{
+    padding-top:10px;
+    padding-right: 10px;
+    border-right: 2px solid #ce8c86;
+}
+p#remaining{
+    padding-top:10px;
+     font-size:14px;
+     color:gray;
+      font-family: 'Times New Roman', Times, serif;
+    font-style: italic; 
+}
+input[type="text"] {
+    padding-top:10px;
+    padding-bottom:10px;
+     font-family: 'Times New Roman', Times, serif;
+    font-style: italic; 
+
+}
+td.want-to{
+    min-width: 350px;
+}
+
+
+label {
+display: inline;
+}
+
+.regular-checkbox {
+display: none;
+}
+
+.regular-checkbox + label {
+background-color: white;
+border: 1px solid #cacece;
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+padding: 9px;
+border-radius: 3px;
+display: inline-block;
+position: relative;
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+background-color: white;
+border: 1px solid #adb8c0;
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+color: black;
+}
+
+.regular-checkbox:checked + label:after {
+content: '\2714';
+font-size: 18px;
+position: absolute;
+top: 0px;
+left: 3px;
+color: black;
 }
